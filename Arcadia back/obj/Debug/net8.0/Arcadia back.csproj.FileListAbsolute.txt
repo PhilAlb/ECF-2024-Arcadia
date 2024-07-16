@@ -1,0 +1,32 @@
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\appsettings.Development.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\appsettings.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Arcadia back.exe
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Arcadia back.deps.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Arcadia back.runtimeconfig.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Arcadia back.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Arcadia back.pdb
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.csproj.AssemblyReference.cache
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.AssemblyInfoInputs.cache
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.AssemblyInfo.cs
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.csproj.CoreCompileInputs.cache
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.MvcApplicationPartsAssemblyInfo.cs
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets.build.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets.development.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets\msbuild.Arcadia back.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets\msbuild.build.Arcadia back.props
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Arcadia back.props
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Arcadia back.props
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\scopedcss\bundle\Arcadia back.styles.css
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia .F87A5708.Up2Date
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\refint\Arcadia back.dll
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.pdb
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\Arcadia back.genruntimeconfig.cache
+D:\Documents\Projets\Arcadia\Arcadia back\Arcadia back\Arcadia back\obj\Debug\net8.0\ref\Arcadia back.dll
