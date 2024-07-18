@@ -1,8 +1,61 @@
-<app-header>
-  <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="src\app\assets\images\Logo 2.png" width="30" height="30" alt="">
-      </a>
-    </nav>
-
-</app-header>
+<header class="bg-light py-3">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between">
+      <!-- Logo et Titre du site -->
+      <div class="d-flex align-items-end">
+        <a class="nav-link p-0" href="#">
+          <img src="../../assets/images/Logo2.png" alt="Logo" class="mr-3" style="width: 120px; height: 80px;">
+        </a>
+        <a class="nav-link p-0" href="#">
+          <h1 class="h3 mb-0 brand-logo">Arcadia</h1>
+        </a>
+      </div>
+      <!-- Barre de navigation -->
+      <nav class="d-none d-md-block ml-auto">
+        <ul class="nav text-decoration-none align-items-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Habitats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menu burger pour mobile -->
+      <div class="d-md-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Menu burger déplié -->
+  <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="navbar-nav text-decoration-none">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Habitats</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Connexion</a>
+      </li>
+    </ul>
+  </div>
+</header>
