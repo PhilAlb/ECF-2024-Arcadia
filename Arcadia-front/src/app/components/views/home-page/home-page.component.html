@@ -1,0 +1,105 @@
+<!-- Logo -->
+<div class="text-center my-5">
+    <img src="../../../../assets/images/Logo.png" alt="Logo" class="logo">
+    <h1>Présentation de notre zoo</h1>
+</div>
+
+<!-- Carrousel d'images -->
+<section id="carousel" class="my-5">
+    <div class="carousel slide" data-ride="carousel" id="carousel-presentation" data-bs-ride="carousel"
+        data-bs-interval="3000">
+        <ul class="carousel-indicators">
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-animal active">
+                <img src="../../../../assets/images/carroussel/lion1.jpg" class="d-block w-100" alt="Lion">
+            </div>
+            <div class="carousel-item carousel-item-animal">
+                <img src="../../../../assets/images/carroussel/tiger1.jpg" class="d-block w-100" alt="Tiger">
+            </div>
+            <div class="carousel-item carousel-item-animal">
+                <img src="../../../../assets/images/carroussel/monkey1.jpg" class="d-block w-100" alt="Monkey">
+            </div>
+            <div class="carousel-item carousel-item-animal">
+                <img src="../../../../assets/images/carroussel/panda1.jpg" class="d-block w-100" alt="Panda">
+            </div>
+            <div class="carousel-item carousel-item-animal">
+                <img src="../../../../assets/images/carroussel/goat1.jpg" class="d-block w-100" alt="Goat">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-presentation"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Habitats -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nos habitats</h2>
+    <div class="row">
+        <app-card-h-s *ngFor="let card of cardHabitatLayout; let index = index" [cardImage]="card.url" [cardTitle]="card.title" [index]="index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+    </div>
+</section>
+
+<!-- Services -->
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nos services</h2>
+    <div class="row">
+        <app-card-h-s *ngFor="let card of cardServiceLayout; let index = index" [cardImage]="card.url" [cardTitle]="card.title" [index]="index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+    </div>
+</section>
+
+<!-- Cartes témoignages -->
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Témoignages de nos visiteurs</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card-testimonies">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Un zoo exceptionnel</h5>
+                        <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
+                            particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le personnel
+                            est
+                            très accueillant et les animaux semblent bien traités. Je recommande vivement pour une
+                            sortie en famille !</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Un zoo exceptionnel</h5>
+                            <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
+                                particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le personnel
+                                est
+                                très accueillant et les animaux semblent bien traités. Je recommande vivement pour une
+                                sortie en famille !</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Un zoo exceptionnel</h5>
+                                <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
+                                    particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le
+                                    personnel
+                                    est
+                                    très accueillant et les animaux semblent bien traités. Je recommande vivement pour
+                                    une
+                                    sortie en famille !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    height: 400px;
+}
+
+h1 {
+    font-family: "Salsa", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Fresca";
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.carousel-indicators li {
+    list-style: none;
+}
+
+.card-testimonies .card {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card-testimonies .card-body {
+    text-align: center;
+}
