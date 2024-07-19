@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardHSComponent } from "../../../card-h-s/card-h-s.component";
+import { CardHSComponent } from '../../cards/card-h-s/card-h-s.component';
 import { CommonModule } from '@angular/common';
 import { ICardLayout } from '../../../interfaces/cardLayout/ICardLayout';
 
