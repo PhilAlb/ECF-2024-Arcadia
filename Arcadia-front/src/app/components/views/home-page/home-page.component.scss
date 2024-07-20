@@ -4,23 +4,29 @@
     width: 500px;
     height: 400px;
 }
-
 h1 {
     font-family: "Salsa", sans-serif;
     font-weight: bold;
     font-size: 3rem;
 }
-
 h2 {
     font-family: "Fresca";
     font-weight: bold;
     font-size: 3rem;
 }
-
 .carousel-indicators li {
     list-style: none;
 }
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
 
+.carousel-indicators .active {
+    background-color: #fff;
+}
 .card-testimonies .card {
     margin-top: 20px;
     padding: 20px;
@@ -30,7 +36,6 @@ h2 {
     max-width: 100%;
     margin: 0 auto;
 }
-
 .card-testimonies .card-body {
     text-align: center;
 }
