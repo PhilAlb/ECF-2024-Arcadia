@@ -1,4 +1,9 @@
 using ArcadiaBack;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using static System.Collections.Specialized.BitVector32;
+using System.ComponentModel;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,25 +68,31 @@ app.MapGet("/animals", () =>
 );
 
 app.MapGet("/services", () =>
-    new List<CardDto>
+    new List<CardServicesDto>
     {
         new()
         {
             Url = "assets/images/services/restauration1.webp",
             Title = "Restauration",
-            VerticalPosition = "70%"
+            Description = "Découvrez notre offre de restauration avec des plats délicieux et variés pour tous les goûts. Notre restaurant propose une sélection de mets allant des sandwichs rapides aux repas gastronomiques. Nous utilisons des ingrédients frais et locaux pour garantir une qualité optimale.",
+            VerticalPosition = "70%",
+            Schedules= "Lundi-Dimanche: 10h00 - 20h00"
         },
         new()
         {
             Url = "assets/images/services/visit1.jpg",
             Title = "Visite guidée",
-            VerticalPosition = "35%"
+            Description = "Participez à nos visites guidées pour découvrir les secrets du zoo et de ses habitants. Nos guides experts vous emmèneront à travers les différentes sections du zoo, vous donnant un aperçu unique de la vie des animaux et de leur habitat naturel. Lors de la visite, vous apprendrez des faits fascinants sur les animaux, leurs comportements, et leurs histoires individuelles. Vous aurez également l'occasion d'assister à des sessions d'alimentation et à des présentations éducatives qui ne sont pas disponibles pour le public général.",
+            VerticalPosition = "35%",
+            Schedules= "Lundi-Samedi: 10h00 - 18h00"
         },
         new()
         {
             Url = "assets/images/services/train1.webp",
             Title = "Visite en train",
-            VerticalPosition = "65%"
+            Description = "Profitez d'une visite confortable et amusante à bord de notre petit train à travers le zoo. Cette expérience est idéale pour les familles avec enfants, les personnes âgées ou toute personne souhaitant découvrir le zoo sans trop marcher. Le petit train vous emmènera dans un voyage pittoresque à travers les différentes zones du zoo, vous offrant une vue d'ensemble de nos attractions principales. Vous passerez par les enclos des animaux, les jardins paysagers, et les zones de jeux pour enfants.",
+            VerticalPosition = "65%",
+            Schedules= "Lundi-Vendredi: 10h00 - 16h00"
         },
     }
 );

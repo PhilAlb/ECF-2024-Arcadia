@@ -6,7 +6,7 @@ import { ICarouselLayout } from '../../../interfaces/carouselLayout/ICarouselLay
 import { CarouselComponent } from '../../../components/carousel/carousel.component';
 import { CardTestimonyComponent } from '../../cards/card-testimony/card-testimony.component';
 import { ICardTestimonyLayout } from '../../../interfaces/cardTestimonyLayout/ICardTestimonyLayout';
-import { TestService } from '../../../services/test/test.service';
+import { ArcadiaService } from '../../../services/arcadia/arcadia.service';
 
 @Component({
   selector: 'app-home-page',
@@ -26,7 +26,7 @@ export class HomePageComponent implements OnInit {
   carouselLayout: ICarouselLayout[] = [];
   cardTestimonyLayout: ICardTestimonyLayout[] = [];
 
-  constructor(private service: TestService) {}
+  constructor(private service: ArcadiaService) {}
 
   ngOnInit() {
     this.service

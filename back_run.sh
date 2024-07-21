@@ -1,5 +1,5 @@
 #!/bin/bash
-SOLUTION_DIR="ECF-2024-Arcadia/Arcadia-back"
+SOLUTION_DIR="Arcadia-back"
 CUSTOM_PROFILE="https"
 
 cd "$SOLUTION_DIR" || exit
