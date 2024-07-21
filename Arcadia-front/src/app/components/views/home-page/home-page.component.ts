@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ICardLayout } from '../../../interfaces/cardLayout/ICardLayout';
 import { ICarouselLayout } from '../../../interfaces/carouselLayout/ICarouselLayout';
 import { CarouselComponent } from "../../../components/carousel/carousel.component";
+import { CardTestimonyComponent } from "../../cards/card-testimony/card-testimony.component";
+import { ICardTestimonyLayout } from '../../../interfaces/cardTestimonyLayout/ICardTestimonyLayout';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CardHSComponent, CommonModule, CarouselComponent],
+  imports: [CardHSComponent, CommonModule, CarouselComponent, CardTestimonyComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
@@ -46,23 +48,40 @@ export class HomePageComponent {
       verticalPosition: "65%"
     },
   ]
-
   carouselLayout: ICarouselLayout[] = [
+      {
+        url: '../../../../assets/images/carousel/lion1.jpg',
+        animalName: 'lion',
+      },
+      {
+        url: '../../../../assets/images/carousel/tiger1.jpg',
+        animalName: 'tiger-image',
+      },
+      {
+        url: '../../../../assets/images/carousel/monkey1.jpg',
+        animalName: 'monkey-image',
+      },
+      {
+        url: '../../../../assets/images/carousel/panda1.jpg',
+        animalName: 'panda-image',
+      },
+      {
+        url: '../../../../assets/images/carousel/goat1.jpg',
+        animalName: 'goat-image',
+      },
+    ];
+  cardTestimonyLayout: ICardTestimonyLayout[] = [
     {
-      url: "../../../../assets/images/carousel/tiger1.jpg",
-      animalName: "tiger-image",
+      title: "titre test1",
+      message: "message test1"
     },
     {
-      url: "../../../../assets/images/carousel/monkey1.jpg",
-      animalName: "monkey-image",
+      title: "titre test2",
+      message: "message test2"
     },
     {
-      url: "../../../../assets/images/carousel/panda1.jpg",
-      animalName: "panda-image",
-    },
-    {
-      url: "../../../../assets/images/carousel/goat1.jpg",
-      animalName: "goat-image",
-    },
+      title: "titre test3",
+      message: "message test3"
+    }
   ]
 }

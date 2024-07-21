@@ -17,10 +17,8 @@
             <li data-bs-target="#carousel-presentation" data-bs-slide-to="4"></li>
         </ul>
         <div class="carousel-inner">
-            <div class="carousel-item carousel-item-animal active">
-                <img src="../../../../assets/images/carousel/lion1.jpg" class="d-block w-100 lion">
-            </div>
-            <app-carousel *ngFor="let carousel of carouselLayout" [carouselImage]="carousel.url" [animalName]="carousel.animalName"></app-carousel>
+            <app-carousel *ngFor="let carousel of carouselLayout" [carouselImage]="carousel.url"
+                [animalName]="carousel.animalName"></app-carousel>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation"
             data-bs-slide="prev">
@@ -59,38 +57,7 @@
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card-testimonies">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Un zoo exceptionnel</h5>
-                        <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
-                            particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le personnel
-                            est
-                            très accueillant et les animaux semblent bien traités. Je recommande vivement pour une
-                            sortie en famille !</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Un zoo exceptionnel</h5>
-                            <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
-                                particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le personnel
-                                est
-                                très accueillant et les animaux semblent bien traités. Je recommande vivement pour une
-                                sortie en famille !</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Un zoo exceptionnel</h5>
-                                <p class="card-text">Un zoo exceptionnel avec une grande variété d'animaux ! J'ai
-                                    particulièrement aimé l'enclos des lions et l'aire de jeux pour enfants. Le
-                                    personnel
-                                    est
-                                    très accueillant et les animaux semblent bien traités. Je recommande vivement pour
-                                    une
-                                    sortie en famille !</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <app-card-testimony></app-card-testimony>
             </div>
         </div>
     </div>
