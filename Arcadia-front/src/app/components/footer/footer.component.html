@@ -7,7 +7,7 @@
                 <!-- Logo Section -->
 
                 <div class="col-md-4 text-center text-md-left">
-                    <img src="../../../assets/images/Logo2.png" alt="Arcadia Zoo Logo" class="footer-logo">
+                    <img src="../../../assets/images/logos/Logo2.png" alt="Arcadia Zoo Logo" class="footer-logo">
                     <p>Arcadia Zoo, un monde sauvage à découvrir.</p>
                 </div>
 
@@ -15,7 +15,7 @@
 
                 <div class="col-md-4 text-center">
                     <h5>Notre Histoire</h5>
-                    <p>Depuis 2005, Arcadia Zoo offre une expérience inoubliable avec une diversité d'animaux et des programmes éducatifs pour tous les âges.</p>
+                    <p>Depuis 2005, Arcadia Zoo offre une expérience inoubliable avec une diversité d'animaux.</p>
                 </div>
 
                 <!-- Navigation Section -->
@@ -23,18 +23,11 @@
                 <div class="col-md-4 text-center text-md-right">
                     <h5>Navigation</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/home">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/home">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/home">Habitats</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/home">Contact</a>
-                        </li>
+                        @for (link of links; track $index){
+                            <li class="nav-item">
+                              <a class="nav-link" [routerLink]="link.url">{{ link.label }}</a>
+                            </li>
+                        }                  
                     </ul>
                 </div>
             </div>

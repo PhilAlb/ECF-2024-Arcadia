@@ -89,8 +89,8 @@ export class HomePageComponent implements OnInit {
   constructor(private habitats:TestService) {}
   
   ngOnInit() {
-    this.habitats.getAllHabitats().subscribe((data: any) => {
-    console.log(data);    
-    });
+    // this.habitats.getAllHabitats().subscribe((data: any) => {
+    // console.log(data);    
+    // });
   }
 }
