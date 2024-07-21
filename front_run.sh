@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOLUTION_DIR="ECF-2024-Arcadia/Arcadia-front"
+SOLUTION_DIR="Arcadia-front"
 
 cd "$SOLUTION_DIR" || exit
 npm start

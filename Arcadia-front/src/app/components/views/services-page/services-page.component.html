@@ -1,21 +1,5 @@
-<h1 class="title">Services</h1>
-
-<div class="services-container">
-  <div class="service-block">
-    <h3>Restauration</h3>
-    <div></div>
-    <div></div>
-  </div>
-
-  <div class="service-block">
-    <h3>Visite guidée</h3>
-    <div></div>
-    <div></div>
-  </div>
-
-  <div class="service-block">
-    <h3>Petit train</h3>
-    <div></div>
-    <div></div>
-  </div>
+<div class="container my-5">
+  @for (card of cardServiceLayout; track $index){
+    <app-card-services [cardImage]="card.url"[cardTitle]="card.title" [cardMessage]="card.description" [cardSchedules]="card.schedules" ></app-card-services>
+  }
 </div>

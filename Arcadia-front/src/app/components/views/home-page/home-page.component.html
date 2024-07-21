@@ -18,8 +18,10 @@
             <li data-bs-target="#carousel-presentation" data-bs-slide-to="4"></li>
         </ul>
         <div class="carousel-inner">
-            <app-carousel *ngFor="let carousel of carouselLayout" [carouselImage]="carousel.url"
-                [animalName]="carousel.animalName"></app-carousel>
+            @for (carousel of carouselLayout; track $index){
+                <app-carousel [carouselImage]="carousel.url"
+                    [animalName]="carousel.animalName"></app-carousel>
+            }
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation"
             data-bs-slide="prev">
@@ -37,8 +39,10 @@
 <section class="container my-5">
     <h2 class="text-center mb-4">Nos habitats</h2>
     <div class="row">
-        <app-card-h-s *ngFor="let card of cardHabitatLayout; let index = index" [cardImage]="card.url"
-            [cardTitle]="card.title" [index]="index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        @for (card of cardHabitatLayout; track $index){
+        <app-card-h-s [cardImage]="card.url"
+            [cardTitle]="card.title" [index]="$index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        }
     </div>
 </section>
 
@@ -47,8 +51,10 @@
 <section class="container my-5">
     <h2 class="text-center mb-4">Nos services</h2>
     <div class="row">
-        <app-card-h-s *ngFor="let card of cardServiceLayout; let index = index" [cardImage]="card.url"
-            [cardTitle]="card.title" [index]="index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        @for (card of cardServiceLayout; track $index){
+        <app-card-h-s [cardImage]="card.url"
+            [cardTitle]="card.title" [index]="$index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        }
     </div>
 </section>
 
@@ -58,12 +64,9 @@
     <h2 class="text-center mb-4">Témoignages de nos visiteurs</h2>
     <div class="row">
       <div class="d-flex card-testimonies">
-        <app-card-testimony
-          *ngFor="let card of cardTestimonyLayout"
-          [cardTitle]="card.title"
-          [cardMessage]="card.message"
-        >
-        </app-card-testimony>
+        @for (card of cardTestimonyLayout; track $index){
+        <app-card-testimony [cardTitle]="card.title" [cardMessage]="card.message"></app-card-testimony>
+    }
       </div>
     </div>
     <div class="row mt-4">

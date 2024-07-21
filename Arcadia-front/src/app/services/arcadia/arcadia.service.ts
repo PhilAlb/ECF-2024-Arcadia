@@ -4,11 +4,12 @@ import { Observable } from 'rxjs';
 import { ICardLayout } from '../../interfaces/cardLayout/ICardLayout';
 import { ICardTestimonyLayout } from '../../interfaces/cardTestimonyLayout/ICardTestimonyLayout';
 import { ICarouselLayout } from '../../interfaces/carouselLayout/ICarouselLayout';
+import { ICardServicesLayout } from '../../interfaces/cardLayout/cardServicesLayout/ICardServicesLayout';
 
 @Injectable({
   providedIn: 'root',
 })
-export class TestService {
+export class ArcadiaService {
   private readonly _url = 'https://localhost:7096';
 
   constructor(private http: HttpClient) {}
@@ -16,8 +17,8 @@ export class TestService {
     return this.http.get<ICardLayout[]>(this._url + '/habitats');
   }
 
-  getAllServices(): Observable<ICardLayout[]> {
-    return this.http.get<ICardLayout[]>(this._url + '/services');
+  getAllServices(): Observable<ICardServicesLayout[]> {
+    return this.http.get<ICardServicesLayout[]>(this._url + '/services');
   }
 
   getCarouselAnimals(): Observable<ICarouselLayout[]> {
