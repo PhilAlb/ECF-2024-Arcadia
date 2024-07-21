@@ -51,22 +51,18 @@ export class HomePageComponent {
     {
       url: "../../../../assets/images/carousel/tiger1.jpg",
       animalName: "tiger-image",
-      verticalPosition: "35%"
     },
     {
       url: "../../../../assets/images/carousel/monkey1.jpg",
       animalName: "monkey-image",
-      verticalPosition: "35%"
     },
     {
       url: "../../../../assets/images/carousel/panda1.jpg",
       animalName: "panda-image",
-      verticalPosition: "35%"
     },
     {
       url: "../../../../assets/images/carousel/goat1.jpg",
       animalName: "goat-image",
-      verticalPosition: "35%"
     },
   ]
 }

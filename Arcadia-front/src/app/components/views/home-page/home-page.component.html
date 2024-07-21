@@ -16,10 +16,12 @@
             <li data-bs-target="#carousel-presentation" data-bs-slide-to="3"></li>
             <li data-bs-target="#carousel-presentation" data-bs-slide-to="4"></li>
         </ul>
-        <div class="carousel-item carousel-item-animal active">
-            <img src="../../../../assets/images/carousel/lion1.jpg" class="d-block w-100 lion">
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-animal active">
+                <img src="../../../../assets/images/carousel/lion1.jpg" class="d-block w-100 lion">
+            </div>
+            <app-carousel *ngFor="let carousel of carouselLayout" [carouselImage]="carousel.url" [animalName]="carousel.animalName"></app-carousel>
         </div>
-        <app-carousel *ngFor="let carousel of carouselLayout" [carouselImage]="carousel.url" [animalName]="carousel.animalName" [verticalPosition]="carousel.verticalPosition"></app-carousel>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
