@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardHSComponent } from '../../cards/card-h-s/card-h-s.component';
 import { CommonModule } from '@angular/common';
 import { ICardLayout } from '../../../interfaces/cardLayout/ICardLayout';
@@ -6,6 +6,7 @@ import { ICarouselLayout } from '../../../interfaces/carouselLayout/ICarouselLay
 import { CarouselComponent } from "../../../components/carousel/carousel.component";
 import { CardTestimonyComponent } from "../../cards/card-testimony/card-testimony.component";
 import { ICardTestimonyLayout } from '../../../interfaces/cardTestimonyLayout/ICardTestimonyLayout';
+import { TestService } from '../../../services/test/test.service';
 
 @Component({
   selector: 'app-home-page',
@@ -14,7 +15,7 @@ import { ICardTestimonyLayout } from '../../../interfaces/cardTestimonyLayout/IC
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
   cardHabitatLayout: ICardLayout[] = [
     {
       url: "../../../../assets/images/habitats/savannah1.jpg",
@@ -72,16 +73,24 @@ export class HomePageComponent {
     ];
   cardTestimonyLayout: ICardTestimonyLayout[] = [
     {
-      title: "titre test1",
-      message: "message test1"
+      title: '"Un après-midi magique"',
+      message: "Un après-midi magique dans un zoo immersif qui nous permet d'être au plus près des animaux de les voir évoluer dans un cadre 100 % adapté. Leur histoire touchante nous est comptée sur les panneaux d'information tout au long du parc."
     },
     {
-      title: "titre test2",
-      message: "message test2"
+      title: '"Zoo immense"',
+      message: "Zoo immense, les animaux semblent très bien traités, on a vu le personnel au petits soins et tendre avec les animaux notamment avec les singes qui le rendent donc super ambiance, et moment agréable en famille. Tarif abordable."
     },
     {
-      title: "titre test3",
-      message: "message test3"
+      title: '"Superbe zoo"',
+      message: "Superbe zoo. Des enclos bien entretenus et des grands espaces. Des animaux en bonne santé et beaucoup d'espèces. Espace pique nique, toilettes, buvettes, snack et boutique dans le parc. Je recommande fortement !"
     }
   ]
+
+  constructor(private habitats:TestService) {}
+  
+  ngOnInit() {
+    this.habitats.getAllHabitats().subscribe((data: any) => {
+    console.log(data);    
+    });
+  }
 }

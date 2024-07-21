@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardTestimonyComponent {
   @Input() cardTitle: string="";
-  @Input() message: string="";
+  @Input() cardMessage: string="";
 }

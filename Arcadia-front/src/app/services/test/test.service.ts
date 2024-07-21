@@ -6,9 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TestService {
+  private readonly _url = "https://localhost:7096"
 
   constructor(private http: HttpClient) {}
-  getAll(): Observable<any> {
-    return this.http.get<any[]>("");
+  getAllHabitats(): Observable<any> {
+    return this.http.get<any>(this._url + "/habitats", 
+      //{ responseType: 'text' }
+      );
   }
 }
