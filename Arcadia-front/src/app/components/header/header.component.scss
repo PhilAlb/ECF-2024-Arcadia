@@ -1,16 +1,16 @@
-.logo {
-    width: 130px; 
-    height: 80px;
-}
-
 .brand-logo {
     font-family: "Fresca";
     font-weight: bold;
     font-size: 2.3rem;
+    color: #000000;
+}
+
+.brand-logo:hover {
+    color: #3f3f3f;
 }
 
 .nav-link, .btn-custom {
-    color: black;
+    color: #d2b48c;
     font-weight: bold;
     font-family: "Fresca";
     font-size: 1.6rem;
@@ -19,7 +19,7 @@
 }
 
 .nav-link:hover {
-    color: #f2f2f2;
+    color: #d1c0a9;
 }
 
 /*.btn-custom {

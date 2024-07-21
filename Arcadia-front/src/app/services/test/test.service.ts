@@ -10,8 +10,6 @@ export class TestService {
 
   constructor(private http: HttpClient) {}
   getAllHabitats(): Observable<any> {
-    return this.http.get<any>(this._url + "/habitats", 
-      //{ responseType: 'text' }
-      );
+    return this.http.get<any>(this._url + "/habitats");
   }
 }
