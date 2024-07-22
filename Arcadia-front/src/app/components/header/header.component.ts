@@ -14,7 +14,7 @@ export class HeaderComponent {
     { label: 'Accueil', url: `/${RouteLinks.Home}` },
     { label: 'Services', url: `/${RouteLinks.Services}` },
     { label: 'Habitats', url: `/${RouteLinks.Habitats}` },
-    { label: 'Contact', url: `/${RouteLinks.Contact}` },
+    { label: 'Contact', url: `/${RouteLinks.Home}` },
   ];
 
   login(): void {}

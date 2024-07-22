@@ -30,7 +30,7 @@
 
 * <img height="15" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"> [**Visual Studio Code**](https://code.visualstudio.com)
 
-* <img height="15" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"> [**Visual Studio Code**](https://code.visualstudio.com)
+* <img height="15" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"> [**Visual Studio**](https://code.visualstudio.com)
 
 
 N'oubliez pas d'ajouter les chemins d'angular et node au PATH de vos environnements variables si besoin.
