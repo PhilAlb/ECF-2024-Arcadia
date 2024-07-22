@@ -1,0 +1,54 @@
+<header class="py-3 header-background">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between">
+      <!-- Logo et Titre du site -->
+      <div class="d-flex align-items-end">
+        <a class="nav-link p-0" routerLink="/home">
+          <h1 class="h3 mb-0 brand-logo">Arcadia</h1>
+        </a>
+      </div>
+      <!-- Barre de navigation -->
+      <nav class="d-none d-md-block ml-auto">
+        <ul class="nav text-decoration-none align-items-end">
+          @for (link of links; track $index){
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="link.url">{{ link.label }}</a>
+          </li>
+          }
+          
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;" (click)="login()">Connexion</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menu burger pour mobile -->
+      <div class="d-md-none">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Menu burger déplié -->
+  <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="nav text-decoration-none align-items-end">
+      @for (link of links; track $index){
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="link.url">{{ link.label }}</a>
+      </li>
+      }
+      
+      <li class="nav-item">
+        <a class="nav-link" (click)="login()">Connexion</a>
+      </li>
+    </ul>
+  </div>
+</header>

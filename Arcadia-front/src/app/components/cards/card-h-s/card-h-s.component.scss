@@ -1,0 +1,53 @@
+:host {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.5s ease;
+    height: 30vh;
+    object-fit: cover;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+
+    &.card-overlay0 {
+        background: rgba(222, 184, 135, 1);
+    }
+
+    &.card-overlay1 {
+        background: rgba(152, 251, 152, 1);
+    }
+
+    &.card-overlay2 {
+        background: rgba(64, 224, 208, 1);
+    }
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+.card-title-overlay {
+    font-size: 2rem;
+}

@@ -1,0 +1,77 @@
+<!-- Logo -->
+ 
+<div class="text-center my-5">
+    <img src="../../../../assets/images/logos/Logo.png" alt="Logo" class="logo">
+    <h1>Présentation de notre zoo</h1>
+</div>
+
+<!-- Carrousel d'images -->
+
+<section id="carousel" class="my-5">
+    <div class="carousel slide" data-ride="carousel" id="carousel-presentation" data-bs-ride="carousel"
+        data-bs-interval="3000">
+        <ul class="carousel-indicators">
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel-presentation" data-bs-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+            @for (carousel of carouselLayout; track $index){
+                <app-carousel [carouselImage]="carousel.url"
+                    [animalName]="carousel.animalName"></app-carousel>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-presentation"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Habitats -->
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nos habitats</h2>
+    <div class="row">
+        @for (card of cardHabitatLayout; track $index){
+        <app-card-h-s [cardImage]="card.url"
+            [cardTitle]="card.title" [index]="$index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        }
+    </div>
+</section>
+
+<!-- Services -->
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nos services</h2>
+    <div class="row">
+        @for (card of cardServiceLayout; track $index){
+        <app-card-h-s [cardImage]="card.url"
+            [cardTitle]="card.title" [index]="$index" [verticalPosition]="card.verticalPosition"></app-card-h-s>
+        }
+    </div>
+</section>
+
+<!-- Cartes témoignages -->
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Témoignages de nos visiteurs</h2>
+    <div class="row">
+      <div class="d-flex card-testimonies">
+        @for (card of cardTestimonyLayout; track $index){
+        <app-card-testimony [cardTitle]="card.title" [cardMessage]="card.message"></app-card-testimony>
+    }
+      </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-testimony">Ajoutez un avis</button>
+        </div>
+    </div>
+  </section>
