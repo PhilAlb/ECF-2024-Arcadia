@@ -1,6 +1,6 @@
 <div>
     <div class="card border-light mb-3">
-        <img [src]="cardImage" class="card-img-top" alt="Savannah" [ngStyle]="{'object-position': '50% ' + verticalPosition}">
+        <img [src]="cardImage" class="card-img-top" [ngStyle]="{'object-position': '50% ' + verticalPosition}">
         <div class="card-overlay" [ngClass]="'card-overlay' + index">
             <h5 class="card-title card-title-overlay">{{ cardTitle }}</h5>
         </div>

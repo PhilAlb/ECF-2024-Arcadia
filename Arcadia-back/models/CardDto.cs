@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ArcadiaBack
 {
-    public class CardDto
+    public abstract class CardDto
     {
         [Required]
         public string Title { get; set; }

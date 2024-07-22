@@ -7,6 +7,8 @@ import { CarouselComponent } from '../../../components/carousel/carousel.compone
 import { CardTestimonyComponent } from '../../cards/card-testimony/card-testimony.component';
 import { ICardTestimonyLayout } from '../../../interfaces/cardTestimonyLayout/ICardTestimonyLayout';
 import { ArcadiaService } from '../../../services/arcadia/arcadia.service';
+import { ICardServicesLayout } from '../../../interfaces/cardLayout/cardServicesLayout/ICardServicesLayout';
+import { ICardHabitatsLayout } from '../../../interfaces/cardLayout/cardHabitatsLayout/ICardHabitatsLayout';
 
 @Component({
   selector: 'app-home-page',
@@ -21,8 +23,8 @@ import { ArcadiaService } from '../../../services/arcadia/arcadia.service';
   styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent implements OnInit {
-  cardHabitatLayout: ICardLayout[] = [];
-  cardServiceLayout: ICardLayout[] = [];
+  cardHabitatLayout: ICardHabitatsLayout[] = [];
+  cardServiceLayout: ICardServicesLayout[] = [];
   carouselLayout: ICarouselLayout[] = [];
   cardTestimonyLayout: ICardTestimonyLayout[] = [];
 
@@ -31,11 +33,11 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
     this.service
       .getAllHabitats()
-      .subscribe((data: ICardLayout[]) => (this.cardHabitatLayout = data));
+      .subscribe((data: ICardHabitatsLayout[]) => (this.cardHabitatLayout = data));
 
     this.service
       .getAllServices()
-      .subscribe((data: ICardLayout[]) => (this.cardServiceLayout = data));
+      .subscribe((data: ICardServicesLayout[]) => (this.cardServiceLayout = data));
 
     this.service
       .getCarouselAnimals()

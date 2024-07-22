@@ -1,1 +1,5 @@
-<p>habitats</p>
+<div class="container my-5">
+    @for (card of cardHabitatsLayout; track $index){
+      <app-card-habitats [cardImage]="card.url"[cardTitle]="card.title" [cardMessage]="card.description" ></app-card-habitats>
+    }
+  </div>

@@ -1,16 +1,12 @@
 <div class="card text-center border-0 mb-3">
     <div class="row no-gutters card-horizontal">
       <div class="col-md-6">
-        <img [src]="cardImage" class="card-img">
+        <img [src]="cardImage" class="card-img" [ngStyle]="{'object-position': '50% ' + verticalPosition}">
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div class="card-body">
           <h5 class="card-title">{{ cardTitle }}</h5>
           <p class="card-text">{{ cardMessage }}</p>
-          <p class="card-text schedules">
-            <span>Horaires d'ouverture :</span><br>
-            {{cardSchedules}}<br>
-          </p>
         </div>
       </div>
     </div>

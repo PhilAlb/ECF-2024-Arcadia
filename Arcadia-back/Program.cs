@@ -38,20 +38,28 @@ app.UseHttpsRedirection();
 /*app.UseAuthorization();*/
 
 app.MapGet("/habitats", () =>
-    new List<CardDto>
+    new List<CardHabitatsDto>
     {
         new()
         {
             Url = "assets/images/habitats/savannah1.jpg",
             Title = "Savane",
-            VerticalPosition = "32%"
+            Description = "La savane est caractérisée par de vastes plaines herbeuses et les paysages ouverts d'Afrique. Les paysages offrent une végétation clairsemée, principalement composée de hautes herbes, d'arbustes et de quelques arbres dispersés. La savane est connue pour ses climats chauds et ses saisons alternant entre des périodes sèches et des périodes de pluies intenses.",
+            VerticalPosition = "30%",
         },
-        new() { Url = "assets/images/habitats/jungle1.webp", Title = "Jungle", },
         new()
         {
-            Url = "assets/images/habitats/farm1.jpg",
-            Title = "Ferme",
-            VerticalPosition = "25%"
+            Url = "assets/images/habitats/jungle1.webp",
+            Title = "Jungle",
+            Description = "La jungle est caractérisée par une végétation dense avec des arbres à canopée élevée, des lianes enchevêtrées, et des fougères luxuriantes. Des cascades et des ruisseaux serpentent à travers la forêt, apportant une ambiance sonore apaisante de l'eau en mouvement.",
+            VerticalPosition = "55%",
+        },
+        new()
+        {
+            Url = "assets/images/habitats/swamp1.jpg",
+            Title = "Marais",
+            Description = "Les marais sont caractérisés par des zones humides situées à la transition entre les écosystèmes aquatiques et terrestres, offrant un refuge crucial pour de nombreuses espèces. Découvrez cet environnement riche et diversifié, où chaque coin regorge de vie et de mystères.",
+            VerticalPosition = "50%",
         },
     }
 );
@@ -63,7 +71,7 @@ app.MapGet("/animals", () =>
         new() { Url = "assets/images/carousel/tiger1.jpg", AnimalName = "tiger-image", },
         new() { Url = "assets/images/carousel/monkey1.jpg", AnimalName = "monkey-image", },
         new() { Url = "assets/images/carousel/panda1.jpg", AnimalName = "panda-image", },
-        new() { Url = "assets/images/carousel/goat1.jpg", AnimalName = "goat-image", },
+        new() { Url = "assets/images/carousel/outter1.jpg", AnimalName = "outter-image", },
     }
 );
 
@@ -82,7 +90,7 @@ app.MapGet("/services", () =>
         {
             Url = "assets/images/services/visit1.jpg",
             Title = "Visite guidée",
-            Description = "Participez à nos visites guidées pour découvrir les secrets du zoo et de ses habitants. Nos guides experts vous emmèneront à travers les différentes sections du zoo, vous donnant un aperçu unique de la vie des animaux et de leur habitat naturel. Lors de la visite, vous apprendrez des faits fascinants sur les animaux, leurs comportements, et leurs histoires individuelles. Vous aurez également l'occasion d'assister à des sessions d'alimentation et à des présentations éducatives qui ne sont pas disponibles pour le public général.",
+            Description = "Participez à nos visites guidées gratuites pour découvrir les secrets du zoo et de ses habitants. Nos guides experts vous emmèneront à travers les différentes sections du zoo, vous donnant un aperçu unique de la vie des animaux et de leur habitat naturel. Lors de la visite, vous apprendrez des faits fascinants sur les animaux, leurs comportements, et leurs histoires individuelles. Vous aurez également l'occasion d'assister à des sessions d'alimentation et à des présentations éducatives qui ne sont pas disponibles pour le public général.",
             VerticalPosition = "35%",
             Schedules= "Lundi-Samedi: 10h00 - 18h00"
         },
